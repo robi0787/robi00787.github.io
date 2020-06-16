@@ -5,6 +5,7 @@
 * {
     box-sizing: border-box;
 }
+/* Set up  */
 body {
     font-family:'Montserrat', sans-serif;
     background-color: #f7f7ff;
@@ -21,7 +22,7 @@ section article p {
 header, section {
     color: #333131;
 }
-/* Set up background image  */
+/* Set up background image to go to start of footer for desktop*/
 .main {
     background-image: url("../images/bg-image/scooter.svg");
     background-repeat: no-repeat;
@@ -29,6 +30,7 @@ header, section {
     width: 375px;
     margin: auto;
 }
+
 
 .boss {
     display: grid;
@@ -38,9 +40,6 @@ header, section {
     align-content: space-between;
     gap: 0;
     }
-
-
-
 
 .form {
     background-color: white;
@@ -139,6 +138,7 @@ footer {
    
 /* Tablet Mode */
 @media(min-width:679px) {
+    /* set the form/main under breakpoint */
     .form {
         width: 600px;
         margin-top: 30rem;  
@@ -149,6 +149,8 @@ footer {
     }
 
 /* Footer */
+
+/* set footer grid display for calculate form for tablet and desktop displays */
     .form-group {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -165,6 +167,7 @@ footer {
     .form-group .calc:nth-child(3) {
         grid-column: span 2;
     }
+/* change icon position */
 .social {
     width: 50%;
     }
@@ -172,21 +175,28 @@ footer {
 
 /* Desktop view */
 @media (min-width: 1023px){
+    /* Change all grey area sizing */
     .main {
         width: 90%;
-
     }
     .form {
         margin-top: 0;
     }
+    /* Change text and form to be side by side with large grid gap. */
     .boss {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-gap: 3rem;
     }
+    /* Footer form and icons side by side with large grid gap */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+        grid-gap: 3rem;
+    }
 }
-
 
 
 
