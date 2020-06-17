@@ -100,7 +100,7 @@ footer {
 .earn h3 {
     font-weight: normal;
 }
-
+/* Create grid for form. hours 1fr city 3fr, calc below it 100% */
 .form-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -138,7 +138,7 @@ footer {
    
 /* Tablet Mode */
 @media(min-width:679px) {
-    /* set the form/main under breakpoint */
+    /* set the form/main larger under breakpoint */
     .form {
         width: 600px;
         margin-top: 30rem;  
@@ -181,6 +181,7 @@ footer {
     }
     .form {
         margin-top: 0;
+        width: 300px;
     }
     /* Change text and form to be side by side with large grid gap. */
     .boss {
